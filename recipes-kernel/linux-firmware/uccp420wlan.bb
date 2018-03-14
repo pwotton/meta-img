@@ -7,8 +7,13 @@ COMPATIBLE_MACHINE = "ci40"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-SRC_URI =  "file://MAC_LOADER.ldr;name=MAC_LOADER;"
+SRC_URI =  "https://github.com/CreatorDev/uccp420wlan/archive/rel.zip"
+SRC_URI +=  "file://MAC_LOADER.ldr;name=MAC_LOADER;"
 SRC_URI += "file://MCP_LOADER.ldr;name=MCP_LOADER;"
+
+SRC_URI[md5sum] = "e7997126d1365ac72453c1393bdf967f"
+SRC_URI[sha256sum] = "885a1da762296c648d56d796b30ade69378fc9081616d172f438cf2d8241bff8"
+
 
 SRC_URI[MAC_LOADER.md5sum] = "90d45fdabe671ac84c23584022110391"
 SRC_URI[MAC_LOADER.sha256sum] = "084c9ec49fd459d2b81926c26e81e427a0de64f30529ad52c9d17cb5dc526248"
